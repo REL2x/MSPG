@@ -109,6 +109,7 @@ async def search_song(interaction : discord.Interaction,music_name: str):
 
     await interaction.followup.send(embed=embed)
 
+#플레이리스트 분석
 @bot.tree.command(name="플레이리스트분석", description = "사용자에게 입력받은 플레이리스트를 토대로 플레이리스트를 분석합니다.")
 @app_commands.describe(playlist_id = "플레이리스트 아이디")
 async def analyze_playlist(interaction : discord.Interaction, playlist_id : str):
